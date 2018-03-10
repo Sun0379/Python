@@ -1,0 +1,10 @@
+1、EOL while scanning string literal   
+    原因：引号不是成对出现
+2、Missing parentheses in call to 'print'  
+    原因：语法错误，就是python3中用了python2的东西
+3、ImportError: No module named 'requests'     
+    原因：没有引入requests方法，import 即可
+4、cmd下import lxml正常，IDLE下import就报错
+    原因判断是笔记本上前后安装两次，CMD的环境变量配置的是第一次安装目录，和IDLE的路径不一致
+    解决办法：import sys 然后sys.path输出结果不一样，临时解决可以用sys.path.append('D:\Python\Python35-32\Lib\site-packages')，
+永久解决需要改环境变量，或者把lxml的安装目录拷贝到IDLE查出来的某一个路径Lib\site-packages里面
