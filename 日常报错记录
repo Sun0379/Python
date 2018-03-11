@@ -8,3 +8,5 @@
     原因判断是笔记本上前后安装两次，CMD的环境变量配置的是第一次安装目录，和IDLE的路径不一致
     解决办法：import sys 然后sys.path输出结果不一样，临时解决可以用sys.path.append('D:\Python\Python35-32\Lib\site-packages')，
 永久解决需要改环境变量，或者把lxml的安装目录拷贝到IDLE查出来的某一个路径Lib\site-packages里面
+5、NameError: name '_name_' is not defined
+    实际上'_name_'是双下划线的 '__name__'
