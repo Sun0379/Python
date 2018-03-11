@@ -16,7 +16,8 @@ def html_page(url):
     data = requests.get(url,headers=headers).content
     return data
 def parse_html(html):
-    soup = BeautifulSoup(html)
+    #创建BeautifulSoup对象时要指定解释器，用lxml或者html.parser都可以
+    soup = BeautifulSoup(html,"lxml")
     #find()方法检测字符串中是否包含某些关键字
     #开发者工具搜索一下片名，确定关键字grid_view/ol/li
     movie_list_soup = soup.find('ol',attrs={'class':'grid_view'})
