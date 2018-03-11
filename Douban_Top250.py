@@ -1,3 +1,4 @@
+···python
 #-*coding:utf-8-*-
 #引入BeautifulSoup，这个东西可以从HTML/XML中提取标签内容
 from bs4 import BeautifulSoup
