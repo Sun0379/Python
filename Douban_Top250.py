@@ -17,8 +17,7 @@ def html_page(url):
     data = requests.get(url,headers=headers).content
     return data
 def parse_html(html):
-    #创建BeautifulSoup对象时要指定解释器，用lxml或者html.parser都可以
-    soup = BeautifulSoup(html,"lxml")
+    soup = BeautifulSoup(html,"html.parser")
     #find()方法检测字符串中是否包含某些关键字
     #开发者工具搜索一下片名，确定关键字grid_view/ol/li
     movie_list_soup = soup.find('ol',attrs={'class':'grid_view'})
@@ -27,7 +26,7 @@ def parse_html(html):
         detail = movie_li.find('div',attrs={'class':'hd'})  
         movie_name = detail.find('span',attrs={'class':'title'}).getText()
         movie_name_list.append(movie_name)
-        print (movie_name)
+        #print (movie_name)
     next_page = soup.find('span',attrs={'class':'next'}).find('a')
     if next_page:
         return movie_name_list,TOP250_URL + next_page['href']
@@ -36,7 +35,7 @@ def parse_html(html):
 
 def main():
     url = TOP250_URL
-    with codecs.open('movies','wb',encoding='utf-8') as fp:
+    with codecs.open('movies.txt','wb',encoding='utf-8') as fp:
         while url:
             html = html_page(url)
             movies,url = parse_html(html)
@@ -45,3 +44,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    doc = open('movies.txt',encoding='utf-8')
+    for i in doc:
+        print (i)
+
