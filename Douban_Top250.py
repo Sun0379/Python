@@ -40,7 +40,6 @@ def main():
             html = html_page(url)
             movies,url = parse_html(html)
             fp.write(u'{movies}\n'.format(movies='\n'.join(movies)))
-    #print(download_page(TOP250_URL))
 
 if __name__ == '__main__':
     main()
