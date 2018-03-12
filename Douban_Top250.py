@@ -35,7 +35,7 @@ def parse_html(html):
 
 def main():
     url = TOP250_URL
-    #写入文件movies.txt
+    #写入文件movies.txt，with关键字，使用上下文管理器自动colse
     with codecs.open('movies.txt','wb',encoding='utf-8') as fp:
         while url:
             html = html_page(url)
