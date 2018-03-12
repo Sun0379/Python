@@ -12,3 +12,5 @@
     实际上'_name_'是双下划线的 '__name__'
 6、OSError: socket no longer exists
     原因：是网络问题
+7、NameError: name 'requests' is not defined
+    原因：requests库是需要单独下载的，或者从别的地方拷贝到Lib\site-packages目录下
