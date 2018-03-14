@@ -1,5 +1,8 @@
+...python
 #!/usr/bin/env python
 # -*- coding:<encoding name> -*-
+
+#冒泡排序
 
 data_all = [10,9,8,7,6,5,4,3,2,1]
 
