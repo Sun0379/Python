@@ -12,9 +12,7 @@ for j in range(len(data_all)):
     print("第",j,"次排序：",data_all)
     for i in range(len(data_all)-j-1):
         if data_all[i] > data_all[i+1]:
-            temp = data_all[i]
-            data_all[i] = data_all[i+1]
-            data_all[i+1] = temp
+            data_all[i],data_all[i+1] = data_all[i+1],data_all[i]
             count_flag = 1
     if count_flag == 1:
              count += 1
