@@ -9,8 +9,7 @@ data_len = int(input("请输入数组长度："))
 #初始化数组
 data_all = list(range(data_len))
 for k in list(range(0,data_len)):
-    h = k+1
-    h = str(h)
+    h = str(k+1)
     data_all[k] = int(input("请输入第"+h+"个数："))
 count = 0
 count_flag = 0
