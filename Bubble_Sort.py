@@ -15,7 +15,7 @@ for j in range(len(data_all)):
             data_all[i],data_all[i+1] = data_all[i+1],data_all[i]
             count_flag = 1
     if count_flag == 1:
-             count += 1
-             count_flag = 0
+            count += 1
+            count_flag = 0
 print("最终排序：",data_all)
 print("排序次数：",count)
