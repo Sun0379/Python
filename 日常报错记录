@@ -14,3 +14,6 @@
     原因：是网络问题
 7、NameError: name 'requests' is not defined
     原因：requests库是需要单独下载的，或者从别的地方拷贝到Lib\site-packages目录下
+8、pip升级的办法
+    原因：按照提示方法升级python -m pip install --upgrade pip报错
+    解决办法：python -m pip install -U pip setuptools升级成功
