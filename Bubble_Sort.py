@@ -10,11 +10,22 @@ data_len = int(input("请输入数组长度："))
 data_all = list(range(data_len))
 for k in list(range(0,data_len)):
     h = str(k+1)
-    try:
-        data_all[k] = int(input("请输入第"+h+"个数："))
-    except BaseException:
-        print("请确认输入的是否为数字！")
-        data_all[k] = int(input("请输入第"+h+"个数："))
+    data_flag = False
+    data_info = 0
+    #while false退出
+    while not data_flag:
+        try:
+            data_all[k] = int(input("请输入第"+h+"个数："))
+            data_flag = True
+            data_info = 0
+        except ValueError:
+            print("输入有误，请重试！")
+            data_info += 1
+        if data_info <= 5:
+            continue
+        else:
+            print("输入错误太多，再见！")
+            exit()
 count = 0
 count_flag = 0
 for j in range(len(data_all)):
