@@ -6,6 +6,7 @@
 
 ####    1.[豆瓣电影Top250--爬虫](https://github.com/Sun0379/Python/blob/master/Douban_Top250.py)<br>
 ####    2.[冒泡排序](https://github.com/Sun0379/Python/blob/master/Bubble_Sort.py)<br>
+#####     涉及数组输入，for、while循环，异常判断
 
 ###  二、Tips<br>
 ----------------------
