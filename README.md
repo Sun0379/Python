@@ -9,7 +9,8 @@
 ####    2.[冒泡排序](https://github.com/Sun0379/Python/blob/master/Bubble_Sort.py)<br>
 ####      涉及数组输入，for、while循环，异常判断
 ####    3.[选择排序](https://github.com/Sun0379/Python/blob/master/Select_Sort.py)<br>
-####      涉及数组输入，for、while循环，异常判断
+####    4.[插入排序](https://github.com/Sun0379/Python/blob/master/Insert_sort.py)<br>
+####      涉及数组的指定位置插入，指定位置删除
 
 ###  二、Tips<br>
 ----------------------
