@@ -12,8 +12,5 @@
     实际上'_name_'是双下划线的 '__name__'
 6、OSError: socket no longer exists
     原因：是网络问题
-7、NameError: name 'requests' is not defined
-    原因：requests库是需要单独下载的，或者从别的地方拷贝到Lib\site-packages目录下
-8、pip升级的办法
-    原因：按照提示方法升级python -m pip install --upgrade pip报错
-    解决办法：python -m pip install -U pip setuptools升级成功
+7、如果程序卡死，没有进展
+    解决办法：直接ctrl+C停掉，看调试是走到哪一步了
