@@ -49,7 +49,7 @@ for i in list(range(1,data_len)):
         if data_all[j] > data_all[i]:
             data_all.insert(j,data_all[i])
             del data_all[i+1]
-        #这里和之前简化了
+        #这里和之前相比简化了
         j += 1
     print("第",i,"次调整：",data_all)
 print("最终排序：",data_all)
