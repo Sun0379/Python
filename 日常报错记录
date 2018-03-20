@@ -16,3 +16,6 @@
     原因：是网络问题
 8、如果程序卡死，没有进展
     解决办法：直接ctrl+C停掉，看调试是走到哪一步了
+9、pip升级的办法
+    按照提示方法升级python -m pip install --upgrade pip报错
+    python -m pip install -U pip setuptools升级成功
